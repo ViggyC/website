@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_0f5vrj7",
-        "template_garihxk",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        "4M1HeV4O2BScQyjPs"
+        process.env.REACT_APP_API_KEY
       )
       .then(
         (result) => {
@@ -39,7 +39,11 @@ const Contact = () => {
             <MdOutlineMailOutline className="contact-icon" />
             <h4>Email</h4>
             <h5>vigneshc5723@gmail.com</h5>
-            <a href="mailto:vigneshc5723@gmail.com" target="_blank">
+            <a
+              href="mailto:vigneshc5723@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Send a message
             </a>
           </article>
@@ -50,6 +54,7 @@ const Contact = () => {
             <a
               href="https://api.whatsapp.com/send?phone=+17208837251"
               target="_blank"
+              rel="noreferrer"
             >
               Send a message
             </a>
