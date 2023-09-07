@@ -1,18 +1,16 @@
-footer {
-  left: 0;
+.footer {
   bottom: 0;
   width: 100%;
   background: var(--first-color);
   padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
-  margin-top: 3rem;
 }
 
-footer a {
-  margin-bottom: 2rem;
+.footer_logo {
+  margin-bottom: 5rem;
 }
 
 .copyright {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }

@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer">
       <a href="#" className="footer_logo">
         <img
           src="https://img.icons8.com/dotty/80/000000/marker-v.png"
