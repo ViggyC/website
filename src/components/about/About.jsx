@@ -46,8 +46,8 @@ const About = () => {
             Bachelors of Science in computer science and a minor in business. I
             enjoy exploring concepts in full stack software development, data
             science, linux systems, network systems and believe it or not.....
-            theory. I currently work for Charles Schwab in Lone Tree Colorado as
-            a software engineer.
+            theory. I am returning to Charles Schwab in Lone Tree Colorado as a
+            software engineer.
           </p>
         </div>
       </div>
