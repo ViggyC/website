@@ -1,10 +1,21 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <footer>
+      <a href="#" className="footer_logo">
+        <img
+          src="https://img.icons8.com/dotty/80/000000/marker-v.png"
+          className="web-icon"
+        ></img>
+      </a>
 
-export default Footer
+      <div className="copyright">
+        <small>&copy; Vignesh Chandrasekhar. All rights reserved.</small>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
