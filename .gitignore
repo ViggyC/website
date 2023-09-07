@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+fly.toml
+
 # testing
 /coverage
 
