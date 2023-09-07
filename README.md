@@ -1,5 +1,5 @@
 # Vignesh Chandrasekhar Website
 
-# # vigneshchandrasekhar.com
+vigneshchandrasekhar.com
 
-# # Built with React
+Built with React
