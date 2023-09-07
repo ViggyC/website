@@ -1,4 +1,4 @@
-# Vignesh Chandrasekhar Website
+# Personal Website
 
 https://vigneshchandrasekhar.com
 
