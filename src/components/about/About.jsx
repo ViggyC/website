@@ -40,10 +40,12 @@ const About = () => {
           <p>
             University of Colorado Boulder graduate (Summa Cum Laude) with a
             Bachelors of Science in computer science and a minor in business. I
-            enjoy exploring concepts in full stack software development, data
-            science, linux systems, network systems and believe it or not.....
-            theory. I am returning to Charles Schwab in Lone Tree Colorado as a
-            software engineer.
+            am currently employed by Charles Schwab in Lone Tree Colorado as an
+            associate software engineer. I enjoy exploring concepts in full
+            stack software development, data science, linux systems, network
+            systems and believe it or not..... theory. In my free time I venture
+            into the world of music, sports, nature, and mindfulness, and I am
+            contstantly learning. Go Denver Nuggets!
           </p>
         </div>
       </div>

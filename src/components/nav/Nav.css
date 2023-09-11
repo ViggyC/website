@@ -38,7 +38,7 @@ nav a.active {
 
 @media screen and (max-width: 1024px) {
   nav {
-    width: 80%;
+    width: fit-content;
   }
 }
 

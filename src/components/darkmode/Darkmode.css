@@ -70,12 +70,12 @@
 
 @media screen and (max-width: 1024px) {
   .dark_mode {
-    width: 80%;
+    width: max-content;
   }
 }
 
 @media screen and (max-width: 600px) {
   .dark_mode {
-    width: 100%;
+    width: max-content;
   }
 }
