@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import Socials from "./Socials";
 import me from "../../assets/images/me.jpg";
+import headshot from "../../assets/images/headshot.jpg";
+
 import { FaLocationArrow } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
 import resume from "../../assets/pdf/Chandrasekhar_Vignesh_Resume.pdf";

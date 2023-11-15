@@ -93,7 +93,7 @@ const Skills = () => {
         </div>
         {/* Courses */}
         <div className="skills_services">
-          <h3>Services</h3>
+          <h3>Platforms & Services</h3>
           <div className="skills_content">
             <article className="skills_details">
               <BsFillPatchCheckFill className="skills_icon" />
@@ -116,6 +116,18 @@ const Skills = () => {
             <article className="skills_details">
               <BsFillPatchCheckFill className="skills_icon" />
               <div>
+                <h4 className="skill_name">GCP</h4>
+              </div>
+            </article>
+            <article className="skills_details">
+              <BsFillPatchCheckFill className="skills_icon" />
+              <div>
+                <h4 className="skill_name">Bamboo</h4>
+              </div>
+            </article>
+            <article className="skills_details">
+              <BsFillPatchCheckFill className="skills_icon" />
+              <div>
                 <h4 className="skill_name">GitHub</h4>
               </div>
             </article>
@@ -123,12 +135,6 @@ const Skills = () => {
               <BsFillPatchCheckFill className="skills_icon" />
               <div>
                 <h4 className="skill_name">Docker</h4>
-              </div>
-            </article>
-            <article className="skills_details">
-              <BsFillPatchCheckFill className="skills_icon" />
-              <div>
-                <h4 className="skill_name">Jupyter</h4>
               </div>
             </article>
           </div>
