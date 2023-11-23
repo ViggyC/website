@@ -1,0 +1,22 @@
+.gpt_container {
+  padding: 2rem 0 4rem;
+}
+
+.gpt_button {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.gpt_response {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+
+textarea[type="text"] {
+  color: white; /* Set a dark text color for text boxes in dark mode */
+}

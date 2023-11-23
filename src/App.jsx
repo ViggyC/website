@@ -14,6 +14,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <OpenAIChatComponent />
       <Nav />
       <About />
       <Quote />

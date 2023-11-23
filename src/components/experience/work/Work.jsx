@@ -7,28 +7,34 @@ const Work = () => {
   return (
     <section>
       <div className="container work_container">
-        {work_data.map(({ id, company, title, from, to, description }) => {
-          return (
-            <article key={id} className="work_item">
-              <div className="work_title">
-                <h3>{company}</h3>
-                <h4>{title}</h4>
-                <h5>
-                  {from} - {to}
-                </h5>
-              </div>
-              <div className="work-description">
-                {description.map((line) => {
-                  return (
-                    <li>
-                      <PiDotFill className="bullet" /> {<p>{line}</p>}
-                    </li>
-                  );
-                })}
-              </div>
-            </article>
-          );
-        })}
+        {work_data.map(
+          ({ id, company, title, link, from, to, description }) => {
+            return (
+              <article key={id} className="work_item">
+                <div className="work_title">
+                  <h3>
+                    <a href={link ? link : undefined} target="_blank">
+                      {company}
+                    </a>
+                  </h3>
+                  <h4>{title}</h4>
+                  <h5>
+                    {from} - {to}
+                  </h5>
+                </div>
+                <div className="work-description">
+                  {description.map((line) => {
+                    return (
+                      <li>
+                        <PiDotFill className="bullet" /> {<p>{line}</p>}
+                      </li>
+                    );
+                  })}
+                </div>
+              </article>
+            );
+          }
+        )}
       </div>
     </section>
   );

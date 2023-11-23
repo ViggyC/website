@@ -4,6 +4,7 @@ const work_data = [
     company: "Charles Schwab",
     title:
       "Associate - Software Development & Engineering • WAM ENG DATA TECHNOLOGY",
+    link: "",
     from: "Sept 2023",
     to: "Present",
     description: [
@@ -16,6 +17,7 @@ const work_data = [
     id: 2,
     company: "University of Colorado Boulder",
     title: "Course Assistant - Artifical Intelligence",
+    link: "",
     from: "Jan 2023",
     to: "May 2023",
     description: [
@@ -29,6 +31,7 @@ const work_data = [
     id: 3,
     company: "Charles Schwab",
     title: "Software Engineer Intern",
+    link: "",
     from: "June 2022",
     to: "Aug 2022",
     description: [
@@ -45,6 +48,7 @@ const work_data = [
     id: 4,
     company: "University of Colorado Boulder",
     title: "Course Assistant - Software Development",
+    link: "",
     from: "Aug 2021",
     to: "Dec 2021",
     description: [
@@ -57,6 +61,7 @@ const work_data = [
     id: 5,
     company: "National Science Foundation",
     title: "Undergraduate Researcher",
+    link: "https://engineering.usu.edu/eed/reu/previous-years/2021",
     from: "May 2021",
     to: "July 2021",
     description: [
