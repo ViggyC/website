@@ -86,8 +86,9 @@
 }
 
 .web-icon {
-  margin: auto;
-  width: 50px;
+  font-size: 1.25rem;
+  width: 30px;
+  margin-left: -3px;
 }
 
 .home_social-icon {

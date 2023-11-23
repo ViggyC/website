@@ -11,11 +11,6 @@ import resume from "../../assets/pdf/Chandrasekhar_Vignesh_Resume.pdf";
 const Header = () => {
   return (
     <section className="home section" id="home">
-      <img
-        src="https://img.icons8.com/dotty/80/000000/marker-v.png"
-        className="web-icon"
-      ></img>
-
       <div className="home_container container grid">
         <div className="home_content grid">
           <Socials />

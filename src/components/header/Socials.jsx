@@ -7,6 +7,10 @@ import { FiGithub } from "react-icons/fi";
 const Socials = () => {
   return (
     <div className="home_social">
+      <img
+        src="https://img.icons8.com/dotty/80/000000/marker-v.png"
+        className="web-icon"
+      ></img>
       <a
         href="https://www.linkedin.com/in/vignesh-chandrasekhar-780818199/"
         target="_blank"
