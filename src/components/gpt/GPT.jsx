@@ -18,7 +18,8 @@ const OpenAIChatComponent = () => {
       setIsLoading(true);
 
       // Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI GPT-3 API key
-      const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
+      console.log(process.env);
+      const apiKey = process.env.REACT_APP_GPT;
 
       const apiUrl = "https://api.openai.com/v1/chat/completions";
       const response = await fetch(apiUrl, {
