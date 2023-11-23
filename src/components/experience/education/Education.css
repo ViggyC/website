@@ -23,8 +23,24 @@
   color: purple;
 }
 
+.awards {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.clubs {
+  text-align: center;
+  margin-left: 10px;
+}
+
 .awards-title {
-  padding: 2rem;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.clubs-title {
+  text-align: center;
+  margin-left: 10px;
 }
 
 .courses-header {

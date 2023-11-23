@@ -6,7 +6,11 @@ const work_data = [
       "Associate - Software Development & Engineering • WAM ENG DATA TECHNOLOGY",
     from: "Sept 2023",
     to: "Present",
-    description: [],
+    description: [
+      "Data Engineering, Platform Engineering, Cloud Engineering",
+      "DevOps, CI/CD",
+      "Python",
+    ],
   },
   {
     id: 2,
