@@ -106,8 +106,10 @@
 }
 
 .home_blob-img {
-  width: 125%;
-  float: left;
+  width: 100%;
+  position: relative;
+  object-fit: contain;
+  margin-left: 100px;
 }
 
 .home_data {
