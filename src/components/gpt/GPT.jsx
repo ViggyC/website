@@ -11,7 +11,7 @@ const OpenAIChatComponent = () => {
     try {
       setIsLoading(true);
       const apiResponse = await fetch(
-        "http://localhost:3001/api/chat-completions",
+        "https://webserver-production-9f35.up.railway.app/api/chat-completions",
         {
           method: "POST",
           headers: {
