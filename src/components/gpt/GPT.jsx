@@ -3,70 +3,54 @@ import "./GPT.css";
 import { SiAnswer } from "react-icons/si";
 
 const OpenAIChatComponent = () => {
-  const [inputMessages, setInputMessages] = useState([
-    { role: "system", content: "You are a helpful assistant." },
-  ]);
-  const [outputText, setOutputText] = useState("");
+  const [prompt, setPrompt] = useState("");
+  const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleInputChange = (e) => {
-    setInputMessages([{ role: "user", content: e.target.value }]);
-  };
-
-  const handleCallApi = async () => {
+  const handleChatCompletion = async () => {
     try {
       setIsLoading(true);
+      const apiResponse = await fetch(
+        "http://localhost:3001/api/chat-completions",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt }),
+        }
+      );
 
-      // Replace 'YOUR_OPENAI_API_KEY' with your actual OpenAI GPT-3 API key
-      const apiKey = process.env.REACT_APP_GPT;
-
-      const apiUrl = "https://api.openai.com/v1/chat/completions";
-      const response = await fetch(apiUrl, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          model: "gpt-3.5-turbo",
-          messages: inputMessages,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to call OpenAI API");
-      }
-
-      const data = await response.json();
-      setOutputText(data.choices[0]?.message?.content || "No response");
+      const result = await apiResponse.json();
+      setResponse(result);
     } catch (error) {
-      console.error("Error calling OpenAI API:", error.message);
+      console.error("Error:", error);
     } finally {
       setIsLoading(false);
     }
   };
 
   return (
-    <section className="section">
-      <div className="container gpt_container">
+    <div className="container gpt_container">
+      <div>
         <textarea
           placeholder="Ask me something..."
-          onChange={handleInputChange}
+          type="text"
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
         />
-        <div className="gpt_button">
-          <button
-            className="button"
-            onClick={handleCallApi}
-            disabled={isLoading}
-          >
-            {isLoading ? "Loading..." : <SiAnswer />}
-          </button>
-        </div>
-        <div className="gpt_response">
-          <strong></strong> {outputText}
-        </div>
       </div>
-    </section>
+      <div className="gpt_button">
+        <button
+          className="button"
+          onClick={handleChatCompletion}
+          disabled={isLoading}
+        >
+          {isLoading ? "Loading..." : <SiAnswer />}
+        </button>
+      </div>
+      <div className="gpt_response">{response}</div>
+    </div>
   );
 };
 

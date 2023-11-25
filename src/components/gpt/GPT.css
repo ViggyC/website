@@ -16,7 +16,3 @@
   display: flex;
   margin: 0;
 }
-
-textarea[type="text"] {
-  color: white; /* Set a dark text color for text boxes in dark mode */
-}
