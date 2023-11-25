@@ -72,6 +72,10 @@ html {
   scroll-behavior: smooth;
 }
 
+textarea {
+  color: green;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
