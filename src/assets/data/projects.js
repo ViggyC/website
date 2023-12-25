@@ -2,6 +2,7 @@ import multilookup from "../images/pa3.png";
 import proxy from "../images/proxy.png";
 import optimizedHealth from "../images/optimized.png";
 import meal from "../images/meal.png";
+import dfs from "../images/dfs.jpeg";
 
 const project_data = [
   {
@@ -39,6 +40,15 @@ const project_data = [
       "This application is made with NodeJs and PostgreSQL. Users can search for meals using keywords and the API returns a json object that contains all of the meal info. Users can then review the meal item and the review is stored in the database.",
     github: "https://github.com/ViggyC/csci3308-finalproject",
     demo: "https://mealreview.fly.dev",
+  },
+  {
+    id: 5,
+    image: dfs,
+    title: "Distributed File Server",
+    description:
+      "Multi-threaded distributed file server programmed in C. Handles client requests for GET, PUT, and LIST which will partition the file into chunks and construct or deconstruct the files distribiuted across multiple servers",
+    github: "https://github.com/ViggyC/Network-Systems/tree/main/PA4",
+    demo: "",
   },
 ];
 

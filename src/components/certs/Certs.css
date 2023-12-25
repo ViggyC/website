@@ -1,0 +1,10 @@
+.badge {
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ace_badge {
+  width: 25;
+  height: 25;
+}
