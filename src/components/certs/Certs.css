@@ -1,4 +1,4 @@
-.badge {
+.badge_container {
   justify-content: center;
   width: 10rem;
   height: 10rem;
@@ -7,4 +7,20 @@
 .ace_badge {
   width: 25;
   height: 25;
+}
+
+@media screen and (max-width: 1024px) {
+  .badge_container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .badge_container {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
