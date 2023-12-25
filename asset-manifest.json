@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83c3a260.css",
-    "main.js": "/static/js/main.7bb8af3d.js",
+    "main.css": "/static/css/main.bf073cd1.css",
+    "main.js": "/static/js/main.9fd91b92.js",
     "static/media/proxy.png": "/static/media/proxy.3d038c3af39e4b650c75.png",
     "static/media/me.jpg": "/static/media/me.97a835bd0ff7d74f96b5.jpg",
     "static/media/meal.png": "/static/media/meal.a8ca01d771beaac962ee.png",
@@ -9,16 +9,17 @@
     "static/media/optimized.png": "/static/media/optimized.aa6f8385143bbaf1bd84.png",
     "static/media/pa3.png": "/static/media/pa3.2ac08b8ce6ca1fbfd143.png",
     "static/media/vignesh_grad_pic1024_1.jpg": "/static/media/vignesh_grad_pic1024_1.f9b3a4a5610b6d58c54e.jpg",
-    "static/media/Chandrasekhar_Vignesh_Resume.pdf": "/static/media/Chandrasekhar_Vignesh_Resume.d704cffbbccfcf81f150.pdf",
+    "static/media/dfs.jpeg": "/static/media/dfs.2e3c5b8b93c352360de5.jpeg",
+    "static/media/Chandrasekhar_Vignesh_Resume.pdf": "/static/media/Chandrasekhar_Vignesh_Resume.349205bcabc2b97b8cfc.pdf",
     "static/media/cuboulder.png": "/static/media/cuboulder.e8420ba844063cc316fb.png",
     "static/media/Sun.svg": "/static/media/Sun.681607dcda2a01539a9a8a157ae74e6e.svg",
     "static/media/Moon.svg": "/static/media/Moon.0a6a2b75ac51157455302ddcfca385c0.svg",
     "index.html": "/index.html",
-    "main.83c3a260.css.map": "/static/css/main.83c3a260.css.map",
-    "main.7bb8af3d.js.map": "/static/js/main.7bb8af3d.js.map"
+    "main.bf073cd1.css.map": "/static/css/main.bf073cd1.css.map",
+    "main.9fd91b92.js.map": "/static/js/main.9fd91b92.js.map"
   },
   "entrypoints": [
-    "static/css/main.83c3a260.css",
-    "static/js/main.7bb8af3d.js"
+    "static/css/main.bf073cd1.css",
+    "static/js/main.9fd91b92.js"
   ]
 }
