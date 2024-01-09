@@ -3,7 +3,7 @@ import App from "./App";
 import "./index.css";
 import Camera from "./components/media/camera/Camera";
 
-import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {

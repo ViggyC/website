@@ -19,7 +19,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          alert("Email Sent :) - I will get back to you soon");
+          alert("Email sent, I will get back to you soon :)");
         },
         (error) => {
           console.log(error.text);
