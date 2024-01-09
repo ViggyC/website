@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 import Socials from "./Socials";
-import me from "../../assets/images/me.jpg";
 import headshot from "../../assets/images/headshot.jpg";
 
 import { FaLocationArrow } from "react-icons/fa";
@@ -51,6 +50,7 @@ const Header = () => {
                 download
                 className="button button--flex"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume <AiOutlineDownload className="button_icon" />
               </a>
