@@ -5,7 +5,7 @@ import "./Certs.css";
 const Certs = () => {
   return (
     <section id="certs">
-      <h3>Professional Certifications</h3>
+      <h3 className="cert_title">Professional Certifications</h3>
       <div className="badge_container container">
         <a
           href="https://google.accredible.com/2ef601ff-c0b2-4c0a-a034-ad3f686829a9"

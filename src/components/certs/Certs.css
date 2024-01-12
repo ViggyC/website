@@ -1,5 +1,4 @@
 .badge_container {
-  justify-content: center;
   width: 10rem;
   height: 10rem;
 }
@@ -9,15 +8,17 @@
   height: 25;
 }
 
-h3 {
+.cert_title {
   text-align: center;
   padding-bottom: 2.5rem;
 }
 
 @media screen and (max-width: 1024px) {
   .badge_container {
-    grid-template-columns: 1fr;
-    gap: 0;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

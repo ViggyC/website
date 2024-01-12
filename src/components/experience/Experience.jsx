@@ -10,7 +10,6 @@ const Experience = () => {
   const [experienceType, setExperienceType] = useState("work");
   return (
     <section id="experience">
-      <h5>Technincal experience and education</h5>
       <h2>Experience</h2>
       <div className="container experience_container">
         <button
