@@ -2,15 +2,20 @@ const work_data = [
   {
     id: 1,
     company: "Charles Schwab",
-    title:
-      "Associate - Software Development & Engineering • WAM ENG DATA TECHNOLOGY",
+    title: "Associate - Software Development & Engineering",
     link: "",
     from: "Sept 2023",
     to: "Present",
+    project: "Fund of Funds NPI Hashing",
     description: [
-      "Data Engineering, Platform Engineering, Cloud Engineering",
-      "DevOps, CI/CD",
-      "Python",
+      "• Assumed ownership of the hashing python code base swiftly, becoming the central point of contact",
+      "• Streamlined on-prem infrastructure setup by crafting effective bash scripts, including tasks like mounting NAS filesystems and setting permissions in lower environments ",
+      "      • Successfully migrated the hashing framework database warehouse from BigQuery to Snowflake, leading to the smooth decommissioning of BigQuery and a seamless transition to Snowflake ",
+      "      • Enhanced the reliability and quality of data by optimizing Python code used in the hashing process and Snowflake queries ",
+      "      • Achieved an impressive >70% coverage on unit tests, ensuring robustness throughout the framework ",
+      "      • Uplifted the hashing framework to both QA and UAT environments, enabling thorough testing and validation ",
+      "      • Configured Control-M jobs for seamless integration of the end-to-end pipeline ETL process, encompassing on-prem to GCP and Snowflake, as well as facilitating smooth Bamboo code deployments ",
+      "      • Contributed extensively to the overall hashing pipeline by harmonizing infrastructure and code needs, resulting in a streamlined and efficient production workflow.",
     ],
   },
   {
@@ -21,10 +26,10 @@ const work_data = [
     from: "Jan 2023",
     to: "May 2023",
     description: [
-      "Supported students in learning AI concepts with Python programming",
-      "Held office hours several times per week to help students with coding problem sets",
-      "Topics covered include path finding, Bayesian Networks, reinforcement learning, Hidden Markov Models, and game theory",
-      "Assisted professor with exam and quiz problems",
+      " • Supported students in learning AI concepts with Python programming",
+      " • Held office hours several times per week to help students with coding problem sets",
+      " • Topics covered include path finding, Bayesian Networks, reinforcement learning, Hidden Markov Models, and game theory",
+      " • Assisted professor with exam and quiz problems",
     ],
   },
   {
@@ -35,12 +40,12 @@ const work_data = [
     from: "June 2022",
     to: "Aug 2022",
     description: [
-      "Developed a full stack governance application using Angular 9, C# .NET Core 3, and SQLServer that allows WAME local governance coordinators and board members to view, maintain, schedule reviews, and vote on architecture requests submitted by engineering and developer teams through Jira.",
-      "Utilizes the Jira REST API to retrieve ticket information and allows coordinators to submit subtasks and comments to an issue.",
-      "Utilizes a 3rd Normal Form Data Model to manage personal information of a developer or coordinator, review schedule, selected voters/reviewers, voting results, and stipulations. Incorporates associative tables to reduce redundancy via foreign key relationships",
-      "Sends emails to architects and coordinators in different contexts with SMTP.",
-      "Utilizes route guards via SSO authentication for different WAME security groups.",
-      "The governance process was previously manual process that involved in person / synchronous delegation and so this application allows for the automation of the governance process.",
+      " • Developed a full stack governance application using Angular 9, C# .NET Core 3, and SQLServer that allows WAME local governance coordinators and board members to view, maintain, schedule reviews, and vote on architecture requests submitted by engineering and developer teams through Jira.",
+      " • Utilizes the Jira REST API to retrieve ticket information and allows coordinators to submit subtasks and comments to an issue.",
+      " • Utilizes a 3rd Normal Form Data Model to manage personal information of a developer or coordinator, review schedule, selected voters/reviewers, voting results, and stipulations. Incorporates associative tables to reduce redundancy via foreign key relationships",
+      " • Sends emails to architects and coordinators in different contexts with SMTP.",
+      " • Utilizes route guards via SSO authentication for different WAME security groups.",
+      " • The governance process was previously manual process that involved in person / synchronous delegation and so this application allows for the automation of the governance process.",
     ],
   },
 
@@ -52,9 +57,9 @@ const work_data = [
     from: "Aug 2021",
     to: "Dec 2021",
     description: [
-      "Supported students in learning the tools and methods used in front-end and back-end software development",
-      "Assisted students in implementing html, CSS, bootstrap, NodeJS, ExpressJS, APIs, Docker, PostgreSQL, and Heroku to develop web applications",
-      "Held office hours several times per week and answered online student questions on Piazza.",
+      " • Supported students in learning the tools and methods used in front-end and back-end software development",
+      " • Assisted students in implementing html, CSS, bootstrap, NodeJS, ExpressJS, APIs, Docker, PostgreSQL, and Heroku to develop web applications",
+      " • Held office hours several times per week and answered online student questions on Piazza.",
     ],
   },
   {
@@ -65,9 +70,9 @@ const work_data = [
     from: "May 2021",
     to: "July 2021",
     description: [
-      "Conducted research in mobile learning with hands on experimentation and its applications to engineering education and fluid mechanics.",
-      "Part of an ONR funded project called 'Mobile Instructional Particle Image Velocimetry (mI-PIV): Using Mobile Devices to Improve Interest and Conceptual Learning in Fluid Mechanics through Hands-on Flow Visualization and Experimentation'.",
-      "Worked with a team of researchers to develop a curriculum for mI-PIV and conducted qualitative research in order to determine the feasibility of an education app for teaching fluid concepts.",
+      " • Conducted research in mobile learning with hands on experimentation and its applications to engineering education and fluid mechanics.",
+      " • Part of an ONR funded project called 'Mobile Instructional Particle Image Velocimetry (mI-PIV): Using Mobile Devices to Improve Interest and Conceptual Learning in Fluid Mechanics through Hands-on Flow Visualization and Experimentation'.",
+      " • Worked with a team of researchers to develop a curriculum for mI-PIV and conducted qualitative research in order to determine the feasibility of an education app for teaching fluid concepts.",
     ],
   },
 ];

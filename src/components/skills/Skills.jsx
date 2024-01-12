@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import Certs from "../certs/Certs";
 
 const Skills = () => {
   return (
@@ -140,6 +141,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <Certs />
     </section>
   );
 };

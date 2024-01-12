@@ -9,6 +9,11 @@
   height: 25;
 }
 
+h3 {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
 @media screen and (max-width: 1024px) {
   .badge_container {
     grid-template-columns: 1fr;

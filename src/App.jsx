@@ -9,7 +9,6 @@ import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import OpenAIChatComponent from "./components/gpt/GPT";
-import Certs from "./components/certs/Certs";
 import Email from "./components/contact2/Email";
 
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
       <About />
       <Quote />
       <Skills />
-      <Certs />
       <Experience />
       <Projects />
       <Email />

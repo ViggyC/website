@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Work.css";
 import work_data from "../../../assets/data/work";
-import { PiDotFill } from "react-icons/pi";
 
 const Work = () => {
+  const [expanded, setExpanded] = useState(false);
+  console.log(work_data[0]);
+  const dataForDisplay = expanded ? work_data : work_data.slice(0, 3);
+  console.log(work_data.type, dataForDisplay.type);
+
   return (
     <section>
       <div className="container work_container">
-        {work_data.map(
-          ({ id, company, title, link, from, to, description }) => {
+        {dataForDisplay.map(
+          ({ id, company, title, link, from, to, project, description }) => {
             return (
               <article key={id} className="work_item">
                 <div className="work_title">
@@ -23,10 +27,12 @@ const Work = () => {
                   </h5>
                 </div>
                 <div className="work-description">
+                  <p className="project">{project}</p>
+
                   {description.map((line) => {
                     return (
                       <li>
-                        <PiDotFill className="bullet" /> {<p>{line}</p>}
+                        <p className="bullet_points">{line}</p>
                       </li>
                     );
                   })}
@@ -35,6 +41,13 @@ const Work = () => {
             );
           }
         )}
+        <button
+          className="btn btn-primary work_button container"
+          type="button"
+          onClick={() => setExpanded(!expanded)}
+        >
+          {expanded ? "Show Less" : "Show More"}
+        </button>
       </div>
     </section>
   );

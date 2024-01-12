@@ -41,6 +41,20 @@ h5 {
   padding: 1rem;
 }
 
+.work_button {
+  justify-content: center;
+}
+
+.bullet_points {
+  padding-left: 2rem;
+  padding-top: 0;
+}
+
+.project {
+  font-weight: bold;
+  padding: 1rem;
+}
+
 .work-description li {
   font-size: 0.9rem;
 }
