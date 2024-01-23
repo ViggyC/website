@@ -6,7 +6,8 @@ const work_data = [
     link: "",
     from: "Sept 2023",
     to: "Present",
-    project: "Fund of Funds NPI Hashing",
+    project:
+      "Fund of Funds NPI Hashing Framework (Python, Snowflake, Linux, GCP)",
     description: [
       "• Assumed ownership of the hashing python code base swiftly, becoming the central point of contact",
       "• Streamlined on-prem infrastructure setup by crafting effective bash scripts, including tasks like mounting NAS filesystems and setting permissions in lower environments ",
@@ -40,12 +41,14 @@ const work_data = [
     from: "June 2022",
     to: "Aug 2022",
     description: [
-      " • Developed a full stack governance application using Angular 9, C# .NET Core 3, and SQLServer that allows WAME local governance coordinators and board members to view, maintain, schedule reviews, and vote on architecture requests submitted by engineering and developer teams through Jira.",
-      " • Utilizes the Jira REST API to retrieve ticket information and allows coordinators to submit subtasks and comments to an issue.",
-      " • Utilizes a 3rd Normal Form Data Model to manage personal information of a developer or coordinator, review schedule, selected voters/reviewers, voting results, and stipulations. Incorporates associative tables to reduce redundancy via foreign key relationships",
-      " • Sends emails to architects and coordinators in different contexts with SMTP.",
-      " • Utilizes route guards via SSO authentication for different WAME security groups.",
-      " • The governance process was previously manual process that involved in person / synchronous delegation and so this application allows for the automation of the governance process.",
+      " • Developed a cutting-edge governance application using Angular 9, C# .NET Core 3, and SQLServer, empowering Schwab's local governance coordinators and board members to efficiently manage architecture requests submitted by engineering and developer teams through Jira.",
+      " • Leveraged the Jira REST API to seamlessly retrieve ticket information, enabling coordinators to submit subtasks and comments to an issue effortlessly.",
+      " • Designed and developed a user-friendly and intuitive UI with multiple views, simplifying the process of searching for an issue, scheduling a review, and storing the review time in the database.",
+      " • Implemented features to assign reviewers to the review process and seamlessly record their votes in the database, enhancing the efficiency and accuracy of the governance application.",
+      " • Implemented a highly efficient 3rd Normal Form Data Model to streamline the management of personal information, review schedules, selected voters/reviewers, voting results, and stipulations. Utilized associative tables and foreign key relationships to reduce redundancy.",
+      " • Implemented an intuitive email notification system, facilitating seamless communication between architects and coordinators in various contexts, using SMTP.",
+      " • Employed route guards and Single Sign-On (SSO) authentication to ensure secure access for different WAME security groups. ",
+      " • Revolutionized the governance process by automating previously manual procedures involving in-person delegation, resulting in a more efficient and streamlined workflow.",
     ],
   },
 
