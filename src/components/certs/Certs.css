@@ -1,0 +1,32 @@
+.badge_container {
+  width: 10rem;
+  height: 10rem;
+}
+
+.ace_badge {
+  width: 25;
+  height: 25;
+}
+
+.cert_title {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .badge_container {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .badge_container {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,76 @@
+.education_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.skool {
+  background: var(--first-color-lighter);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.skool:hover {
+  background: transparent;
+  transition: var(--transition);
+}
+
+.skool h3 {
+  color: var(--first-color);
+}
+
+.skool p {
+  color: purple;
+}
+
+.awards {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.clubs {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.awards-title {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.clubs-title {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.courses-header {
+  margin-top: 1.5rem;
+}
+
+.backpack {
+  padding: auto;
+}
+
+.cu {
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.courses {
+  text-align: left;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .education_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .education_container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

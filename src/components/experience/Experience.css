@@ -1,0 +1,16 @@
+.experience_container {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  padding: auto;
+  margin-bottom: 3rem;
+}
+
+/* .experience_content {
+  display: flex;
+  justify-content: center;
+} */
+
+.experience-icon {
+  padding: auto;
+}
