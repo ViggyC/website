@@ -83,6 +83,7 @@ const Email = () => {
               placeholder="Your name"
               value={formData.name}
               onChange={handleChange}
+              required
             />
           </label>
           <label>
@@ -93,6 +94,7 @@ const Email = () => {
               placeholder="Your email"
               value={formData.email}
               onChange={handleChange}
+              required
             />
           </label>
           <label>
@@ -102,6 +104,7 @@ const Email = () => {
               value={formData.message}
               placeholder="What's up?"
               onChange={handleChange}
+              required
             />
           </label>
           <button
