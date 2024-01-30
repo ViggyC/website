@@ -10,6 +10,8 @@ import Footer from "./components/footer/Footer";
 import OpenAIChatComponent from "./components/gpt/GPT";
 import Email from "./components/contact2/Email";
 
+//
+
 const App = () => {
   return (
     <>
