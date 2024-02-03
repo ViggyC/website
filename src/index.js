@@ -10,9 +10,14 @@ const router = createHashRouter([
     path: "/",
     element: <App />,
   },
+
   {
     path: "/blog",
     element: <Camera />,
+  },
+  {
+    path: "/*",
+    element: <App />,
   },
 ]);
 
