@@ -39,8 +39,10 @@ const Header = () => {
           </div>
           <div className="home_data">
             <h1 className="home_title">Hi, I'm Vignesh</h1>
-            <h3 className="home_subtitle">Software Engineer | GCP Certified</h3>
-            <p className="home_description">Welcome to my page</p>
+            <h3 className="home_subtitle">Software Engineer</h3>
+            <p className="home_description">
+              Aspiring tumbler and music creator
+            </p>
             <div>
               <a href="#contact" className="button button--flex">
                 Contact Me <FaLocationArrow className="button_icon" />
