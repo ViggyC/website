@@ -1,6 +1,6 @@
 .badge_container {
-  width: 10rem;
-  height: 10rem;
+  display: flex;
+  justify-content: center; /* Adjust as needed */
 }
 
 .ace_badge {

@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { Link } from "react-router-dom";
 import { FiLinkedin } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
@@ -7,10 +8,14 @@ import { FiGithub } from "react-icons/fi";
 const Socials = () => {
   return (
     <div className="home_social">
-      <img
-        src="https://img.icons8.com/dotty/80/000000/marker-v.png"
-        className="web-icon"
-      ></img>
+      <Link to={"/blog"}>
+        {" "}
+        <img
+          src="https://img.icons8.com/dotty/80/000000/marker-v.png"
+          className="web-icon"
+        ></img>
+      </Link>
+
       <a
         href="https://www.linkedin.com/in/vignesh-chandrasekhar-780818199/"
         target="_blank"

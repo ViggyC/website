@@ -1,0 +1,73 @@
+.love-message {
+  font-size: 48px;
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Choose a modern font */
+  color: #3498db; /* Cool blue color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.love-message.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-text {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards, colorChange 4s infinite alternate;
+  margin: 0 10px; /* Adjust the margin between "I" and "You" and the heart */
+}
+
+.heart {
+  color: #e74c3c; /* A stylish red */
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+    filter: brightness(100%);
+  }
+  50% {
+    color: #ff69b4; /* Hot Pink */
+    filter: brightness(150%);
+  }
+  100% {
+    color: #3498db;
+    filter: brightness(100%);
+  }
+}
+
+/* Add word-spacing for increased space between words */
+.animated-text + .heart,
+.heart + .animated-text {
+  word-spacing: 20px; /* Adjust the word spacing as needed */
+}

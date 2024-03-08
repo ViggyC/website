@@ -18,6 +18,18 @@ const Certs = () => {
             />
           </div>
         </a>
+
+        <a
+          href="https://google.accredible.com/21e61048-1480-4a0c-b2cb-6303628d59a1"
+          target="_blank"
+        >
+          <div className="ace_badge">
+            <img
+              src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/96360717"
+              alt="pca"
+            />
+          </div>
+        </a>
       </div>
     </section>
   );
