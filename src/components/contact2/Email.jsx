@@ -27,7 +27,7 @@ const Email = () => {
 
     try {
       const response = await axios.post(
-        "https://webserver-production-9f35.up.railway.app/send_mail",
+        "https://vigneshchandrasekhar.fly.dev/send_mail",
         formData
       );
       console.log(response);

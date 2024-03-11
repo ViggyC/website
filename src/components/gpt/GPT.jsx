@@ -11,7 +11,7 @@ const OpenAIChatComponent = () => {
     try {
       setIsLoading(true);
       const apiResponse = await fetch(
-        "https://webserver-production-9f35.up.railway.app/api/chat-completions",
+        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
         {
           method: "POST",
           headers: {
@@ -55,3 +55,5 @@ const OpenAIChatComponent = () => {
 };
 
 export default OpenAIChatComponent;
+
+//https://webserver-production-9f35.up.railway.app
