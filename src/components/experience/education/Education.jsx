@@ -13,7 +13,7 @@ const Education = () => {
           <img src={cu} className="cu" alt="" />
           <h3>B.S in Computer Science</h3>
           <p>Summa Cum Laude</p>
-          <h5>GPA: 4.0 Department | 3.983 Cumulative </h5>
+          <h5>GPA: 4.0 Major | 3.983 Cumulative </h5>
           <br />
           <h3 className="clubs-title">Minors</h3>
           <p>Business</p>
