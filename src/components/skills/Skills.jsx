@@ -7,7 +7,10 @@ import logos from "../../assets/data/skills";
 const Skills = () => {
   return (
     <section id="skills">
-      <h2>Technical Skills</h2>
+      <h2>My Bag</h2>
+      <div className="whoamibox container">
+        <p className="cmd">[~]$ ls /dev/skills</p>
+      </div>
       <div className="container skills_container">
         <div className="skills_image_container">
           {logos.map((logo) => (

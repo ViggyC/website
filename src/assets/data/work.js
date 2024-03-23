@@ -6,8 +6,7 @@ const work_data = [
     link: "",
     from: "Sept 2023",
     to: "Present",
-    project:
-      "Fund of Funds NPI Hashing Framework (Python, Snowflake, Linux, GCP)",
+    project: "Fund of Funds NPI Hashing",
     description: [
       "• Assumed ownership of the hashing python code base swiftly, becoming the central point of contact",
       "• Streamlined on-prem infrastructure setup by crafting effective bash scripts, including tasks like mounting NAS filesystems and setting permissions in lower environments ",

@@ -12,16 +12,32 @@ const logos = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
   },
   {
-    id: 13,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+    id: 7,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
   },
   {
     id: 3,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
   },
   {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    id: 13,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
+  },
+
+  {
     id: 4,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+  },
+  {
+    id: 9,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg",
+  },
+  {
+    id: 11,
+    src: "https://res.cloudinary.com/dxi2scgya/images/f_auto,q_auto/v1685190296/snowflake/snowflake.svg?_i=AA",
   },
   {
     id: 5,
@@ -31,9 +47,9 @@ const logos = [
     id: 6,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg",
   },
+
   {
-    id: 7,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg",
   },
   {
     id: 8,
@@ -44,16 +60,14 @@ const logos = [
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg",
   },
   {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg",
+  },
+  {
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg",
+  },
+  {
     id: 14,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg",
-  },
-  {
-    id: 9,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg",
-  },
-  {
-    id: 11,
-    src: "https://res.cloudinary.com/dxi2scgya/images/f_auto,q_auto/v1685190296/snowflake/snowflake.svg?_i=AA",
   },
 ];
 

@@ -12,6 +12,21 @@
   margin: 2rem;
 }
 
+.whoamibox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmd {
+  color: green;
+  font-family: monospace;
+  font-style: normal;
+  font-size: larger;
+}
+
 .image-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
