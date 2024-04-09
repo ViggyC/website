@@ -40,13 +40,13 @@
   gap: 1rem;
 }
 
-.github_icon {
-  color: var(--github-icon-color);
-}
-
 .github_button {
   border: 1px solid black;
   border-radius: 0.4rem;
+}
+
+.github_icon {
+  color: var(--github-icon-color);
 }
 
 @media screen and (max-width: 1024px) {

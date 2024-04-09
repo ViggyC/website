@@ -5,6 +5,14 @@
   align-items: center;
 }
 
+.badge_image_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
 .badge_container > div {
   background: transparent;
   padding: 2.4rem 5rem;

@@ -26,7 +26,7 @@
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
   --experience-text-color: hsl(var(--hue-color), 8%, 45%);
-  --github-icon-color: white;
+  --github-icon-color: color: var(--first-color-alt);
 
   /* fonts */
   --body-font: "Poppins", sans-serif;
@@ -78,6 +78,10 @@ html {
 }
 
 textarea {
+  color: green;
+}
+
+input {
   color: green;
 }
 
