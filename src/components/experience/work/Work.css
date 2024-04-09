@@ -10,12 +10,7 @@
   border: 1px solid var(--first-color);
   height: fit-content;
   transition: var(--transition);
-}
-
-.work_item:hover {
-  background: transparent;
-  border-color: var(--first-color-alt);
-  cursor: default;
+  color: var(--experience-text-color);
 }
 
 .work_title {
@@ -23,10 +18,11 @@
   padding: 2rem;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  color: var(--experience-text-color);
 }
 
 .work_title h3 {
-  color: var(--first-color);
+  color: var(--experience-text-color);
   font-size: 1rem;
   text-align: center;
 }
@@ -34,7 +30,7 @@
 .work_title h4,
 h5 {
   text-align: center;
-  color: var(--text-color);
+  color: var(--experience-text-color);
 }
 
 .work-description {

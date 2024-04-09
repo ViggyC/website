@@ -8,10 +8,6 @@ const Projects = () => {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <h5>
-        Some stuff I've made. See my
-        <a href="https://github.com/ViggyC"> github</a> for more
-      </h5>
       <div className="container projects_container">
         {project_data.map(({ id, image, title, description, github, demo }) => {
           return (
@@ -30,11 +26,11 @@ const Projects = () => {
               <div className="project-cta">
                 <a
                   href={github}
-                  className="btn "
+                  className="btn github_button"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FiGithub />
+                  <FiGithub className="github_icon" />
                 </a>
                 {/* <a href={demo} className="btn" target="_blank" rel="noreferrer">
                   Demo

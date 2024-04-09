@@ -10,6 +10,7 @@
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  color: var(--experience-text-color);
 }
 
 .project_item:hover {
@@ -24,19 +25,28 @@
 
 .project_item h3 {
   margin: 1.2rem 0 1rem;
-  color: var(--first-color-alt);
+  color: var(--experience-text-color);
   text-align: center;
 }
 
 .project_item p {
   margin-bottom: 1rem;
-  color: var(--text-color-light);
+  color: var(--experience-text-color);
 }
 
 .project-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.github_icon {
+  color: var(--github-icon-color);
+}
+
+.github_button {
+  border: 1px solid black;
+  border-radius: 0.4rem;
 }
 
 @media screen and (max-width: 1024px) {
