@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import "./GPT.css";
 import { SiAnswer } from "react-icons/si";
+import { v4 as uuidv4 } from "uuid";
+const sessionId = uuidv4();
 
 const OpenAIChatComponent = () => {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isCleared, setIsCleared] = useState("");
+
+  const data = {
+    userSession: sessionId,
+    prompt: prompt,
+  };
 
   const handleChatCompletion = async () => {
     try {
       setIsLoading(true);
       const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
-        // "http://localhost:3001/api/chat-completions",
+        // "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
+        "http://localhost:3001/api/chat-completions",
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ prompt }),
+          body: JSON.stringify(data),
         }
       );
 
@@ -34,14 +42,19 @@ const OpenAIChatComponent = () => {
   const handleClearHistory = async () => {
     try {
       const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
-        // "http://localhost:3001/api/clear-history",
+        // "https://vigneshchandrasekhar.fly.dev/api/clear-history",
+        "http://localhost:3001/api/clear-history",
         {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ sessionId }),
         }
       );
-      const result = await apiResponse;
-      console.log(result);
+      const result = await apiResponse.text();
+      setIsCleared(result);
+      alert(result);
     } catch (error) {
       console.error("Error:", error);
     }
