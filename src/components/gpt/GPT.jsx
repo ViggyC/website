@@ -12,6 +12,7 @@ const OpenAIChatComponent = () => {
       setIsLoading(true);
       const apiResponse = await fetch(
         "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
+        // "http://localhost:3001/api/chat-completions",
         {
           method: "POST",
           headers: {
@@ -21,13 +22,34 @@ const OpenAIChatComponent = () => {
         }
       );
 
-      const result = await apiResponse.json();
+      const result = await apiResponse.text();
       setResponse(result);
     } catch (error) {
       console.error("Error:", error);
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleClearHistory = async () => {
+    try {
+      const apiResponse = await fetch(
+        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
+        // "http://localhost:3001/api/clear-history",
+        {
+          method: "POST",
+        }
+      );
+      const result = await apiResponse;
+      console.log(result);
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+
+  const handleClearChat = async () => {
+    setPrompt("");
+    setResponse("");
   };
 
   return (
@@ -37,6 +59,7 @@ const OpenAIChatComponent = () => {
           placeholder="Ask me something..."
           type="text"
           value={prompt}
+          className="resizable-textarea"
           onChange={(e) => setPrompt(e.target.value)}
         />
       </div>
@@ -49,11 +72,24 @@ const OpenAIChatComponent = () => {
           {isLoading ? "Loading..." : <SiAnswer />}
         </button>
       </div>
-      <div className="gpt_response">{response}</div>
+      <div
+        className="gpt_response"
+        dangerouslySetInnerHTML={{ __html: response }}
+      />
+      <br />
+      <div className="clear-buttons">
+        <button className="button" onClick={handleClearHistory}>
+          Clear History
+        </button>
+        <button className="button" onClick={handleClearChat}>
+          Clear Chat
+        </button>
+      </div>
     </div>
   );
 };
 
 export default OpenAIChatComponent;
+//<button onClick={handleClearHistory}>Clear History</button>
 
 //https://webserver-production-9f35.up.railway.app
