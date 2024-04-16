@@ -14,13 +14,13 @@ const Experience = () => {
       <div className="container experience_container">
         <button
           onClick={() => setExperienceType("work")}
-          className="btn btn-primary button button--flex"
+          className="button button--flex"
         >
           <GiBriefcase className="experience-icon" /> Work
         </button>
         <button
           onClick={() => setExperienceType("education")}
-          className="btn button--flex"
+          className="button  button--flex"
         >
           <FaGraduationCap className="experience-icon" /> Education
         </button>

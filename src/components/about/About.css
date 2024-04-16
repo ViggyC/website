@@ -5,6 +5,21 @@
   padding-top: 3rem;
 }
 
+.whoamibox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmd {
+  color: green;
+  font-family: monospace;
+  font-style: normal;
+  font-size: larger;
+}
+
 .about_me {
   width: 100%;
   aspect-ratio: 1/1;

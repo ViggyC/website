@@ -1,16 +1,54 @@
 .badge_container {
   display: flex;
-  justify-content: center; /* Adjust as needed */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.badge_image_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.badge_container > div {
+  background: transparent;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 
 .ace_badge {
   width: 25;
   height: 25;
 }
+.whoamibox {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cmd {
+  color: green;
+  font-family: monospace;
+  font-style: normal;
+  font-size: larger;
+}
 
 .cert_title {
   text-align: center;
   padding-bottom: 2.5rem;
+}
+
+.badge_container > div:hover {
+  background: var(--first-color-lighter);
+  border-color: var(--color-light);
+  color: black;
 }
 
 @media screen and (max-width: 1024px) {

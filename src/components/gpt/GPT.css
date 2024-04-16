@@ -16,3 +16,20 @@
   display: flex;
   margin: 0;
 }
+
+.resizable-textarea {
+  resize: both;
+  overflow: auto;
+}
+
+.clear-buttons {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.gpt_response.with-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
