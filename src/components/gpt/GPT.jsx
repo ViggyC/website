@@ -19,8 +19,8 @@ const OpenAIChatComponent = () => {
     try {
       setIsLoading(true);
       const apiResponse = await fetch(
-        // "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
-        "http://localhost:3001/api/chat-completions",
+        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
+        // "http://localhost:3001/api/chat-completions",
         {
           method: "POST",
           headers: {
@@ -42,8 +42,8 @@ const OpenAIChatComponent = () => {
   const handleClearHistory = async () => {
     try {
       const apiResponse = await fetch(
-        // "https://vigneshchandrasekhar.fly.dev/api/clear-history",
-        "http://localhost:3001/api/clear-history",
+        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
+        // "http://localhost:3001/api/clear-history",
         {
           method: "POST",
           headers: {
@@ -103,6 +103,3 @@ const OpenAIChatComponent = () => {
 };
 
 export default OpenAIChatComponent;
-//<button onClick={handleClearHistory}>Clear History</button>
-
-//https://webserver-production-9f35.up.railway.app
