@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import Socials from "./Socials";
 import headshot from "../../assets/images/headshot.jpg";
+import beach from "../../assets/images/iceland.PNG";
 
 import { FaLocationArrow } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -29,10 +30,15 @@ const Header = () => {
                 />
               </mask>
               <g mask="url(#mask0)">
-                <image
+                {/* <image
                   transform="scale(2.4) translate(-92, -50)"
                   className="home_blob-img"
                   xlinkHref={headshot}
+                /> */}
+                <image
+                  transform="scale(2.2) translate(-55, -145)"
+                  className="home_blob-img"
+                  xlinkHref={beach}
                 />
               </g>
             </svg>
@@ -41,7 +47,7 @@ const Header = () => {
             <h1 className="home_title">Hi, I'm Vignesh</h1>
             <h3 className="home_subtitle">Software Engineer</h3>
             <p className="home_description">
-              Aspiring tumbler and music creator
+              Aspiring tumbler and bass music producer
             </p>
             <div>
               <a href="#contact" className="button button--flex">
