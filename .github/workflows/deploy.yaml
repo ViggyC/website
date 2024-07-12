@@ -25,7 +25,7 @@ jobs:
         env:
           REACT_APP_API_GPT_URL: ${{ vars.API_GPT_URL }}
           REACT_APP_API_CLEAR_HISTORY_URL: ${{ vars.API_CLEAR_HISTORY_URL }}
-        run: CI=false && npm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
