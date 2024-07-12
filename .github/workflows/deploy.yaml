@@ -23,8 +23,8 @@ jobs:
 
       - name: Build the project
         env:
-          REACT_APP_API_GPT_URL: ${{ secrets.API_GPT_URL }}
-          REACT_APP_API_CLEAR_HISTORY_URL: ${{ secrets.API_CLEAR_HISTORY_URL }}
+          REACT_APP_API_GPT_URL: ${{ env.API_GPT_URL }}
+          REACT_APP_API_CLEAR_HISTORY_URL: ${{ env.API_CLEAR_HISTORY_URL }}
         run: npm run build
 
       - name: Deploy to GitHub Pages
