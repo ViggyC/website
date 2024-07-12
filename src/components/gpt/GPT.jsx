@@ -18,17 +18,13 @@ const OpenAIChatComponent = () => {
   const handleChatCompletion = async () => {
     try {
       setIsLoading(true);
-      const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/chat-completions",
-        // "http://localhost:3001/api/chat-completions",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
+      const apiResponse = await fetch(process.env.REACT_APP_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
       const result = await apiResponse.text();
       setResponse(result);
@@ -41,17 +37,13 @@ const OpenAIChatComponent = () => {
 
   const handleClearHistory = async () => {
     try {
-      const apiResponse = await fetch(
-        "https://vigneshchandrasekhar.fly.dev/api/clear-history",
-        // "http://localhost:3001/api/clear-history",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ sessionId }),
-        }
-      );
+      const apiResponse = await fetch(process.env.REACT_APP_SERVER_URL_CLEAR, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ sessionId }),
+      });
       const result = await apiResponse.text();
       setIsCleared(result);
       alert(result);
