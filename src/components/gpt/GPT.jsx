@@ -18,7 +18,7 @@ const OpenAIChatComponent = () => {
   const handleChatCompletion = async () => {
     try {
       setIsLoading(true);
-      const apiResponse = await fetch(process.env.REACT_APP_API_URL, {
+      const apiResponse = await fetch(process.env.REACT_APP_API_GPT_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -37,13 +37,16 @@ const OpenAIChatComponent = () => {
 
   const handleClearHistory = async () => {
     try {
-      const apiResponse = await fetch(process.env.REACT_APP_SERVER_URL_CLEAR, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ sessionId }),
-      });
+      const apiResponse = await fetch(
+        process.env.REACT_APP_API_CLEAR_HISTORY_URL,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ sessionId }),
+        }
+      );
       const result = await apiResponse.text();
       setIsCleared(result);
       alert(result);
