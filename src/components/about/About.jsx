@@ -12,21 +12,21 @@ const About = () => {
       <div className="container about__container">
         <div className="about_me">
           <div className="about_me_image">
-            <img src={grad} alt="About Image" />
+            <img src={grad} alt="Grad" />
           </div>
         </div>
         <div className="about_content">
           <p>
-            Hi, I’m a 22 yr old professional in the financial services industry.
-            I am currently employed at Charles Schwab in the Wealth Asset
-            Management Data and Architecture organization, where I do data
-            engineering, platform development, software engineering, and DevOps
-            using cloud solutions, CI/CD, and best practices for enterprise. I
-            graduated summa cum laude from the University of Colorado Boulder
-            with a degree in computer science and a minor in business. I am
-            starting to deep dive more into machine learning and AI in my free
-            time. Besides the nerd stuff I venture into the world of music,
-            sports, nature, and mindfulness, and I am contstantly learning.
+            I am a dynamic 22-year-old software engineer at Charles Schwab, in
+            the Wealth Asset Management Data and Architecture organization. My
+            expertise spans data engineering, platform and software development,
+            as well as DevOps using cutting-edge cloud solutions, CI/CD, and
+            enterprise best practices. Graduating Summa Cum Laude from the
+            University of Colorado Boulder with a Bachelors in computer science
+            and a business minor has equipped me with strong skills to excel in
+            these industries. Beyond my career interests, I am passionate about
+            exploring music, food, sports, nature, and mindfulness, always eager
+            to learn and grow. Go Nuggets!
           </p>
         </div>
       </div>
