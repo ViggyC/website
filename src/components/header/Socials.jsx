@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FiLinkedin } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
+import { FaFacebook } from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -39,6 +40,14 @@ const Socials = () => {
         rel="noreferrer"
       >
         <BsInstagram />
+      </a>
+      <a
+        href="https://www.facebook.com/viggyc5723/"
+        target="_blank"
+        className="home_social-icon"
+        rel="noreferrer"
+      >
+        <FaFacebook />
       </a>
     </div>
   );

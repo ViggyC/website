@@ -14,7 +14,7 @@
   /* colors */
   /* 410 gold*/
   /* 210 blue */
-  --hue-color: 410;
+  --hue-color: 407;
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
