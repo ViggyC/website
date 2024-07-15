@@ -1,0 +1,29 @@
+.Iframe {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans,
+    Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 100;
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.link {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.career_description {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+}

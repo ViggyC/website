@@ -9,6 +9,7 @@ import Projects from "./components/projects/Projects";
 import Footer from "./components/footer/Footer";
 import OpenAIChatComponent from "./components/gpt/GPT";
 import Email from "./components/contact2/Email";
+import Soundcloud from "./components/soundcloud/Soundcloud";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <OpenAIChatComponent />
       <Nav />
       <About />
+      <Soundcloud />
       <Quote />
       <Skills />
       <Experience />
