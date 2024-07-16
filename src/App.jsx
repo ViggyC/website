@@ -18,7 +18,6 @@ const App = () => {
       <OpenAIChatComponent />
       <Nav />
       <About />
-      <Soundcloud />
       <Quote />
       <Skills />
       <Experience />
