@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className="about_content">
           <p>
-            I am a dynamic 22-year-old software engineer at Charles Schwab, in
+            I am a dynamic 23-year-old software engineer at Charles Schwab, in
             the Wealth Asset Management Data and Architecture organization. My
             expertise spans data engineering, platform and software development,
             as well as DevOps using cutting-edge cloud solutions, CI/CD, and
