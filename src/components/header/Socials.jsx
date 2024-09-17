@@ -5,6 +5,7 @@ import { FiLinkedin } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { FaFacebook } from "react-icons/fa";
+import { FaSoundcloud } from "react-icons/fa";
 
 const Socials = () => {
   return (
@@ -16,6 +17,14 @@ const Socials = () => {
           className="web-icon"
         ></img>
       </Link>
+      <a
+        href="https://soundcloud.com/viggybeats/tracks"
+        target="_blank"
+        className="home_social-icon"
+        rel="noreferrer"
+      >
+        <FaSoundcloud />
+      </a>
 
       <a
         href="https://www.linkedin.com/in/vignesh-chandrasekhar-780818199/"
