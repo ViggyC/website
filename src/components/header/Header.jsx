@@ -5,6 +5,8 @@ import beach from "../../assets/images/iceland.PNG";
 import { FaLocationArrow } from "react-icons/fa";
 import { AiOutlineDownload } from "react-icons/ai";
 import resume from "../../assets/pdf/Chandrasekhar_Vignesh_Resume.pdf";
+import { FaSoundcloud } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -43,10 +45,9 @@ const Header = () => {
           </div>
           <div className="home_data">
             <h1 className="home_title">Hi, I'm Vignesh</h1>
-            <h3 className="home_subtitle">Software Engineer</h3>
-            <p className="home_description">
-              Aspiring tumbler and bass music producer{" "}
-            </p>
+            <h3 className="home_subtitle">
+              Software Engineer + EDM producer & DJ
+            </h3>
             <div>
               <a href="#contact" className="button button--flex">
                 Contact Me <FaLocationArrow className="button_icon" />

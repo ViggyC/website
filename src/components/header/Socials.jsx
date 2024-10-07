@@ -23,7 +23,7 @@ const Socials = () => {
         className="home_social-icon"
         rel="noreferrer"
       >
-        <FaSoundcloud />
+        <FaSoundcloud size={25} />
       </a>
 
       <a
