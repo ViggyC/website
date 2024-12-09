@@ -46,7 +46,7 @@ const Header = () => {
           <div className="home_data">
             <h1 className="home_title">Hi, I'm Vignesh</h1>
             <h3 className="home_subtitle">
-              Software Engineer + EDM producer & DJ
+              Software Engineer + Bass Music Producer
             </h3>
             <div>
               <a href="#contact" className="button button--flex">
