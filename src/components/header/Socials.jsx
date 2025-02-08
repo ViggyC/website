@@ -18,7 +18,7 @@ const Socials = () => {
         ></img>
       </Link>
       <a
-        href="https://soundcloud.com/viggybeats/tracks"
+        href="https://soundcloud.com/viggysounds/tracks"
         target="_blank"
         className="home_social-icon"
         rel="noreferrer"
