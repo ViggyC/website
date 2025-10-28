@@ -10,7 +10,7 @@ import { FaSoundcloud } from "react-icons/fa";
 const Socials = () => {
   return (
     <div className="home_social">
-      <Link to={"/blog"}>
+      <Link to={"/viggysounds"}>
         {" "}
         <img
           src="https://img.icons8.com/dotty/80/000000/marker-v.png"

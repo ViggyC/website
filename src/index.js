@@ -12,10 +12,6 @@ const router = createHashRouter([
   },
 
   {
-    path: "/blog",
-    element: <Camera />,
-  },
-  {
     path: "/viggysounds",
     element: <VIGGYEPK />,
   },

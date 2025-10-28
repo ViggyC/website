@@ -1,120 +1,222 @@
 import React from "react";
-import { motion, px } from "framer-motion";
-import { FaInstagram, FaSpotify, FaSoundcloud, FaTiktok } from "react-icons/fa";
-import Slider from "react-slick";
+import { motion } from "framer-motion";
+import {
+  FaInstagram,
+  FaSpotify,
+  FaSoundcloud,
+  FaTiktok,
+  FaPlay,
+} from "react-icons/fa";
+
+//shows
 import viggy_dubwub from "../../assets/viggysounds/dubwub_viggy_dope.png";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import dubwub_viggy_iii_cover from "../../assets/viggysounds/dubwub_iii_cover.jpeg";
+import dubwub_viggy_ii_cover from "../../assets/viggysounds/viggy_dubwub_ii.jpeg";
+
+import viggy_logo from "../../assets/viggysounds/viggy_logo.svg"; // Add this import
+import headshot from "../../assets/viggysounds/headshot_viggy.png";
+import "./viggy.css";
+
+//import cover art
+import coherence from "../../assets/viggysounds/coverArt/coherence.jpeg"; // Add this import
+import buzz_cover from "../../assets/viggysounds/coverArt/buzz.png";
+import idontcare_cover from "../../assets/viggysounds/coverArt/idontcare.png";
+import dumdeedum_cover from "../../assets/viggysounds/coverArt/dum_dee_dum.png";
+import ilikethat_cover from "../../assets/viggysounds/coverArt/I_like_that.png";
+import getyouhigh_cover from "../../assets/viggysounds/coverArt/get_you_high.png";
+import experience_cover from "../../assets/viggysounds/coverArt/experience.png";
 
 export default function VIGGYEPK() {
   const socials = [
-    { icon: <FaInstagram />, link: "https://instagram.com/viggysounds" },
+    {
+      icon: <FaInstagram />,
+      link: "https://instagram.com/viggysounds",
+      name: "Instagram",
+    },
     {
       icon: <FaSpotify />,
       link: "https://open.spotify.com/artist/1LGq6HsdkJncPPY1rmDB4s?si=nOkjZBUzSCCJcYFDzr9J8g",
+      name: "Spotify",
     },
-    { icon: <FaSoundcloud />, link: "https://soundcloud.com/viggysounds" },
-    { icon: <FaTiktok />, link: "https://www.tiktok.com/@viggysoundz" },
+    {
+      icon: <FaSoundcloud />,
+      link: "https://soundcloud.com/viggysounds",
+      name: "SoundCloud",
+    },
+    {
+      icon: <FaTiktok />,
+      link: "https://www.tiktok.com/@viggysoundz",
+      name: "TikTok",
+    },
   ];
 
   const tracks = [
-    "https://soundcloud.com/viggysounds/the-buzz-viggy-flip",
-    "https://soundcloud.com/viggysounds/dieantwoord-idontcare-viggy-flip",
-    "https://soundcloud.com/viggysounds/keysnkrates-dumdeedum-viggy-flip",
+    {
+      title: "Hermitude - The Buzz (VIGGY Flip)",
+      soundcloudUrl: "https://soundcloud.com/viggysounds/the-buzz-viggy-flip",
+      coverArt: buzz_cover,
+    },
+    {
+      title: "Die Antwoord - I Don't Care (VIGGY Flip)",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/dieantwoord-idontcare-viggy-flip",
+      coverArt: idontcare_cover,
+    },
+    {
+      title: "Keys N Krates - Dum Dee Dum (VIGGY Flip)",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/keysnkrates-dumdeedum-viggy-flip",
+      coverArt: dumdeedum_cover,
+    },
+    {
+      title: "COHERNECE",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/i-like-that-viggy?si=79f4c0c3f73a4186bfb6003ccb2c9db8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      spotifyUrl:
+        "https://open.spotify.com/track/2WcLzt5KrKxnEV5UffJ4us?si=667f9843de6b4633",
+      coverArt: coherence,
+    },
+    {
+      title: "I LIKE that.",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/i-like-that-viggy?si=79f4c0c3f73a4186bfb6003ccb2c9db8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      spotifyUrl:
+        "https://open.spotify.com/track/2WcLzt5KrKxnEV5UffJ4us?si=667f9843de6b4633",
+      coverArt: ilikethat_cover,
+    },
+    {
+      title: "Get You High",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/getyouhigh?si=c9c90b98264f403d9af94df0015ef2a0&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      spotifyUrl:
+        "https://open.spotify.com/track/4dEoahugDtvbClnbjscnOx?si=5f23a8a957604757",
+      coverArt: getyouhigh_cover,
+    },
+    {
+      title: "Ludovico Einaudi - Experience (VIGGY FLIP)",
+      soundcloudUrl:
+        "https://soundcloud.com/viggysounds/experience?si=fd3fabe44d9e45a8958075ef24e8f627&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+      coverArt: experience_cover,
+    },
   ];
 
-  const mediaItems = [
-    { type: "image", src: viggy_dubwub },
-    { type: "image", src: "/media/live2.jpg" },
-    { type: "video", src: "/media/liveclip.mp4" },
+  const galleryImages = [
+    { src: viggy_dubwub, alt: "Viggy DJ Set" },
+    { src: dubwub_viggy_iii_cover, alt: "Live Performance" },
+    { src: dubwub_viggy_ii_cover, alt: "Studio Session" },
   ];
-
-  const sliderSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-  };
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* HEADER */}
-      <motion.header
-        className="flex flex-col items-center p-8 text-center"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+    <div className="viggy-epk">
+      {/* HERO SECTION */}
+      <motion.section
+        className="hero-section"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
-        <div className="w-32 h-32 rounded-full border-4 border-white overflow-hidden">
-          {/* <img
-            src={viggy_dubwub}
-            alt="Artist"
-            className="w-full h-full object-cover object-center"
-          /> */}
+        <div className="hero-content">
+          <div className="artist-image">
+            <img src={headshot} alt="Viggy" />
+          </div>
+          <img src={viggy_logo} alt="Viggy Logo" />{" "}
+          {/* Replace with your logo */}
+          <p className="artist-tagline">Dubstep & Experimental Bass</p>
+          <div className="social-links">
+            {socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                aria-label={social.name}
+              >
+                {social.icon}
+              </a>
+            ))}
+          </div>
         </div>
-        <h1 className="text-4xl font-bold mt-4">VIGGY</h1>
-        <p className="max-w-2xl mt-4 text-gray-300">Bass Music Producer</p>
-        <div className="flex gap-6 mt-6">
-          {socials.map((s, i) => (
-            <a
-              key={i}
-              href={s.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-3xl hover:text-purple-500 transition"
-            >
-              {s.icon}
-            </a>
-          ))}
-        </div>
-      </motion.header>
+      </motion.section>
 
-      {/* TRACK LIST */}
-      <section className="p-8 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-4">Popular Tracks</h2>
-        <div className="flex flex-col gap-6 items-center">
-          {tracks.map((track, i) => (
-            <iframe
-              key={i}
-              className="rounded-lg w-full max-w-xl"
-              height="166"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(
-                track
-              )}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
-            ></iframe>
-          ))}
+      {/* MUSIC SECTION */}
+      <section className="music-section">
+        <div className="container">
+          <h2 className="section-title">IDs:</h2>
+          <div className="tracks-grid">
+            {tracks.map((track, index) => (
+              <div key={index} className="track-card">
+                <div className="track-cover">
+                  <img src={track.coverArt} alt={`${track.title} cover art`} />
+                </div>
+                <div className="track-info">
+                  <h3 className="track-title">{track.title}</h3>
+                  <div className="track-links">
+                    <a
+                      href={track.soundcloudUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="track-link soundcloud"
+                    >
+                      <FaSoundcloud /> Listen on SoundCloud
+                    </a>
+                    {track.spotifyUrl && track.spotifyUrl !== "#" && (
+                      <a
+                        href={track.spotifyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="track-link spotify"
+                      >
+                        <FaSpotify /> Listen on Spotify
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* MEDIA CAROUSEL */}
-      <section className="p-8 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-4">Live Performances</h2>
-        <Slider {...sliderSettings}>
-          {mediaItems.map((item, i) => (
-            <div key={i} className="flex justify-center">
-              {item.type === "image" ? (
-                <img
-                  src={item.src}
-                  alt={`Media ${i}`}
-                  height="400 px"
-                  width="400 px"
-                  object-fit="cover"
-                  className="max-h-[500px] w-full object-contain rounded-lg"
-                />
-              ) : (
-                <video
-                  src={item.src}
-                  controls
-                  className="max-h-[500px] w-full object-contain rounded-lg"
-                ></video>
-              )}
+      {/* GALLERY SECTION */}
+      <section className="gallery-section">
+        <div className="container">
+          <h2 className="section-title">Live Performances</h2>
+          <div className="gallery-grid">
+            {galleryImages.map((image, index) => (
+              <div key={index} className="gallery-item">
+                <img src={image.src} alt={image.alt} loading="lazy" />
+              </div>
+            ))}
+          </div>
+          <div className="centered-text">More content coming!!</div>
+        </div>
+      </section>
+
+      {/* CONTACT SECTION */}
+      <section className="contact-section">
+        <div className="container">
+          <h2 className="section-title">Bookings & Contact</h2>
+          <div className="contact-info">
+            <p>For bookings and collaborations:</p>
+            <a href="mailto:viggysounds@gmail.com" className="contact-email">
+              viggysounds@gmail.com
+            </a>
+            <div className="contact-socials">
+              {socials.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-social-link"
+                >
+                  {social.icon}
+                </a>
+              ))}
             </div>
-          ))}
-        </Slider>
+          </div>
+        </div>
       </section>
     </div>
   );

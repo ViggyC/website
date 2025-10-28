@@ -1,0 +1,296 @@
+/* Scope all styles to the viggy-epk container */
+.viggy-epk {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+/* HERO SECTION */
+.viggy-epk .hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%23ff6b6b"/><stop offset="100%" stop-color="%23000"/></radialGradient></defs><rect width="100%" height="100%" fill="url(%23a)"/></svg>');
+  background-size: cover;
+  background-position: center;
+}
+
+.viggy-epk .hero-content {
+  max-width: 800px;
+}
+
+.viggy-epk .artist-image {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #ff6b6b;
+  box-shadow: 0 0 30px rgba(255, 107, 107, 0.5);
+}
+
+.viggy-epk .artist-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.viggy-epk .artist-name {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.viggy-epk .artist-tagline {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.viggy-epk .social-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.viggy-epk .social-link {
+  font-size: 2rem;
+  color: #ccc;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.viggy-epk .social-link:hover {
+  color: #ff6b6b;
+  transform: translateY(-3px);
+  background: rgba(255, 107, 107, 0.2);
+}
+
+/* CONTAINER */
+.viggy-epk .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* SECTION TITLES */
+.viggy-epk .section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ff6b6b;
+}
+
+/* MUSIC SECTION */
+.viggy-epk .music-section {
+  padding: 4rem 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Track cover art styling */
+.viggy-epk .track-cover {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.viggy-epk .track-cover:hover {
+  transform: scale(1.05);
+}
+
+.viggy-epk .track-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.viggy-epk .tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Updated track card layout */
+.viggy-epk .track-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.viggy-epk .track-card:hover {
+  transform: translateY(-5px);
+}
+
+.viggy-epk .track-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.viggy-epk .track-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.viggy-epk .track-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.viggy-epk .track-link:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: #ff6b6b;
+  transform: translateX(5px);
+}
+
+.viggy-epk .track-link.soundcloud:hover {
+  background: rgba(255, 140, 0, 0.2);
+  border-color: #ff8c00;
+}
+
+.viggy-epk .track-link.spotify:hover {
+  background: rgba(30, 215, 96, 0.2);
+  border-color: #1db954;
+}
+
+/* GALLERY SECTION */
+.viggy-epk .gallery-section {
+  padding: 4rem 0;
+}
+
+.viggy-epk .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.viggy-epk .gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.viggy-epk .gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.viggy-epk .gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* CONTACT SECTION */
+.viggy-epk .contact-section {
+  padding: 4rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.viggy-epk .contact-info p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.viggy-epk .contact-email {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.viggy-epk .contact-email:hover {
+  color: #4ecdc4;
+}
+
+.viggy-epk .contact-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.viggy-epk .contact-social-link {
+  font-size: 1.5rem;
+  color: #ccc;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.viggy-epk .contact-social-link:hover {
+  color: #ff6b6b;
+  transform: translateY(-3px);
+  background: rgba(255, 107, 107, 0.2);
+}
+
+/* CENTERED TEXT */
+.viggy-epk .centered-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .viggy-epk .artist-name {
+    font-size: 2.5rem;
+  }
+
+  .viggy-epk .section-title {
+    font-size: 2rem;
+  }
+
+  .viggy-epk .tracks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .viggy-epk .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .viggy-epk .social-links {
+    gap: 1rem;
+  }
+
+  .viggy-epk .social-link {
+    font-size: 1.5rem;
+  }
+}
