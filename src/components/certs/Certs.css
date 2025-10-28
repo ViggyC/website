@@ -21,7 +21,7 @@
   transition: var(--transition);
 }
 
-.ace_badge {
+.ace_badge_display {
   width: 25;
   height: 25;
 }

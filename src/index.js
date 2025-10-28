@@ -4,6 +4,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 import Camera from "./components/media/camera/Camera";
+import VIGGYEPK from "./components/viggysounds/viggy";
 const router = createHashRouter([
   {
     path: "/",
@@ -13,6 +14,10 @@ const router = createHashRouter([
   {
     path: "/blog",
     element: <Camera />,
+  },
+  {
+    path: "/viggysounds",
+    element: <VIGGYEPK />,
   },
   {
     path: "/*",

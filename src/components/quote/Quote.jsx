@@ -8,20 +8,28 @@ const Quote = () => {
   const [author, setAuthor] = useState([]);
 
   useEffect(() => {
-    fetch("https://type.fit/api/quotes")
-      .then((response) => response.json())
+    fetch("https://api.api-ninjas.com/v2/quotes", {
+      headers: {
+        "X-Api-Key": process.env.REACT_APP_NINJA_API_KEY,
+      },
+    })
+      .then((response) => {
+        console.log("Response status:", response.status);
+        console.log("Response headers:", response.headers);
+        return response.json();
+      })
       .then((data) => {
-        console.log("data: ", data);
-        var numQuotes = data.length;
-        var randomQuote = Math.floor(Math.random() * numQuotes);
-        setQuote(' " ' + data[randomQuote].text + ' " ');
-        setAuthor(
-          " -" +
-            data[randomQuote].author.substring(
-              0,
-              data[randomQuote].author.indexOf(",")
-            )
-        );
+        console.log("Response data:", data);
+        // Handle the data here - you'll need to update this based on the API response format
+        if (data && data.length > 0) {
+          setQuote(' " ' + data[0].quote + ' " ');
+          setAuthor(" - " + data[0].author);
+        }
+      })
+      .catch((error) => {
+        console.error("Fetch error:", error);
+        setQuote("Error fetching quote");
+        setAuthor("");
       });
   }, []);
 
