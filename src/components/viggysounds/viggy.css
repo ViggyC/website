@@ -277,6 +277,11 @@
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+  /* Override global section top margin on mobile for this EPK */
+  .viggy-epk section {
+    margin-top: 0;
+  }
+
   .viggy-epk .hero-section {
     min-height: 100vh;
     padding: 2rem 1rem;
