@@ -12,6 +12,7 @@ import {
 import viggy_dubwub from "../../assets/viggysounds/dubwub_viggy_dope.png";
 import dubwub_viggy_iii_cover from "../../assets/viggysounds/dubwub_iii_cover.jpeg";
 import dubwub_viggy_ii_cover from "../../assets/viggysounds/viggy_dubwub_ii.jpeg";
+import vibes from "../../assets/viggysounds/vibes.jpeg";
 
 import viggy_logo from "../../assets/viggysounds/viggy_logo.svg"; // Add this import
 import headshot from "../../assets/viggysounds/headshot_viggy.png";
@@ -71,9 +72,9 @@ export default function VIGGYEPK() {
     {
       title: "COHERNECE",
       soundcloudUrl:
-        "https://soundcloud.com/viggysounds/i-like-that-viggy?si=79f4c0c3f73a4186bfb6003ccb2c9db8&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+        "https://soundcloud.com/viggysounds/coherence?si=b74d438637364478ba938bb5121c5ab6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
       spotifyUrl:
-        "https://open.spotify.com/track/2WcLzt5KrKxnEV5UffJ4us?si=667f9843de6b4633",
+        "https://open.spotify.com/track/5Df4HkiGshTf4XhaDqhRmt?si=1f9b5bf970d6403c",
       coverArt: coherence,
     },
     {
@@ -100,10 +101,14 @@ export default function VIGGYEPK() {
     },
   ];
 
-  const galleryImages = [
-    { src: viggy_dubwub, alt: "Viggy DJ Set" },
-    { src: dubwub_viggy_iii_cover, alt: "Live Performance" },
-    { src: dubwub_viggy_ii_cover, alt: "Studio Session" },
+  const galleryMedia = [
+    { src: viggy_dubwub, alt: "Viggy DJ Set", type: "image" },
+    { src: dubwub_viggy_iii_cover, alt: "Live Performance", type: "image" },
+    { src: dubwub_viggy_ii_cover, alt: "Studio Session", type: "image" },
+    { src: vibes, alt: "Studio Session", type: "image" },
+    // Add videos like this:
+    // { src: "path/to/video.mp4", alt: "Live Performance Video", type: "video" },
+    // { src: "https://youtube.com/embed/VIDEO_ID", alt: "YouTube Video", type: "video", isYouTube: true },
   ];
 
   return (
@@ -183,9 +188,30 @@ export default function VIGGYEPK() {
         <div className="container">
           <h2 className="section-title">Live Performances</h2>
           <div className="gallery-grid">
-            {galleryImages.map((image, index) => (
+            {galleryMedia.map((media, index) => (
               <div key={index} className="gallery-item">
-                <img src={image.src} alt={image.alt} loading="lazy" />
+                {media.type === "video" ? (
+                  media.isYouTube ? (
+                    <iframe
+                      src={media.src}
+                      title={media.alt}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                    />
+                  ) : (
+                    <video
+                      src={media.src}
+                      alt={media.alt}
+                      controls
+                      preload="metadata"
+                      loading="lazy"
+                    />
+                  )
+                ) : (
+                  <img src={media.src} alt={media.alt} loading="lazy" />
+                )}
               </div>
             ))}
           </div>
